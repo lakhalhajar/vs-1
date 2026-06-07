@@ -5,9 +5,11 @@ const DEFAULT_DESC = 'Premium real estate and construction services — Navi Mum
 
 export function defaultMetadata(overrides?: Partial<Metadata>): Metadata {
   const base: Metadata = {
-    title: SITE_NAME,
+    title: {
+      default: SITE_NAME,
+      template: '%s | Super Construction Company — Navi Mumbai'
+    },
     description: DEFAULT_DESC,
-    titleTemplate: '%s | Super Construction Company — Navi Mumbai',
     openGraph: {
       title: `${SITE_NAME} — Real Estate Navi Mumbai`,
       description: DEFAULT_DESC,
