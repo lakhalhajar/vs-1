@@ -1,6 +1,9 @@
 "use client"
 import React from 'react'
-import { X, Instagram, LinkedIn } from 'lucide-react'
+// استيراد الأيقونات بشكل مباشر ومفصل لتفحصها Vercel وتمريرها دون أخطاء برمجية
+import X from 'lucide-react/dist/esm/icons/x'
+import Instagram from 'lucide-react/dist/esm/icons/instagram'
+import LinkedIn from 'lucide-react/dist/esm/icons/linkedin'
 
 export default function Footer() {
   return (
