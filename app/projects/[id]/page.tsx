@@ -13,9 +13,9 @@ const StickySidebar = dynamic(() => import('../../../components/projects/StickyS
 type Props = {
   params: Promise<{ id: string }>;
 };
-
-export default async function ProjectPage({ params }: Props) {
-  const { id } = await params;
+ 
+ export default async function ProjectPage({ params }: Props) {
+   const { id } = await params;
   const project = getProjectById(id);
   if (!project) return notFound();
 

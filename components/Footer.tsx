@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { Twitter, Instagram, Linkedin } from 'lucide-react'
+import { X, Instagram, Linkedin } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -23,7 +23,7 @@ export default function Footer() {
 
         <div className="flex flex-col gap-3">
           <div className="flex items-center gap-3">
-            <a href="#" aria-label="Twitter" className="text-white/90"><Twitter /></a>
+            <a href="#" aria-label="X (Twitter)" className="text-white/90"><X /></a>
             <a href="#" aria-label="Instagram" className="text-white/90"><Instagram /></a>
             <a href="#" aria-label="LinkedIn" className="text-white/90"><Linkedin /></a>
           </div>
