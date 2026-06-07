@@ -11,11 +11,12 @@ const MapPlaceholder = dynamic(() => import('../../../components/projects/MapPla
 const StickySidebar = dynamic(() => import('../../../components/projects/StickySidebar'));
 
 type Props = {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 };
 
-export default function ProjectPage({ params }: Props) {
-  const project = getProjectById(params.id);
+export default async function ProjectPage({ params }: Props) {
+  const { id } = await params;
+  const project = getProjectById(id);
   if (!project) return notFound();
 
   return (
