@@ -6,9 +6,11 @@ import Footer from '../components/Footer'
 import WhatsAppButton from '../components/WhatsAppButton'
 
 export const metadata: Metadata = {
-  title: 'Super Construction Company',
+  title: {
+    default: 'Super Construction Company',
+    template: '%s | Super Construction Company — Navi Mumbai',
+  },
   description: 'Premium real estate and construction services — Navi Mumbai',
-  titleTemplate: '%s | Super Construction Company — Navi Mumbai',
   openGraph: {
     title: 'Super Construction Company — Real Estate Navi Mumbai',
     description: '40+ years of premium construction and real estate services in Navi Mumbai.',
